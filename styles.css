@@ -1,0 +1,180 @@
+/* Reset some default styles */
+body, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header, main, section, footer {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ h2, h3, h4 {
+    color: #000000;
+}
+h1 {
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Assuming you want the header to cover the full viewport height */
+}
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.job {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    header, main, section, footer {
+        margin: 10px;
+    }
+}
+
+/* Styling for smaller screens */
+@media screen and (max-width: 576px) {
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    ul {
+        font-size: 16px;
+    }
+}
+/* ... existing styles ... */
+
+/* Grid for Current Openings */
+.jobs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #fffefe;
+    color: #000000;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+/* Reset and basic styling */
+/* ... existing styles ... */
+
+/* Navbar styles */
+nav {
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d73;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.logo img {
+    width: 100px; /* Adjust the size as needed */
+    height: 40px; /* Maintain aspect ratio */
+    margin-right: 10px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #101010;
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-left: 15px;
+}
+
+.icon img {
+    width: 24px;
+    height: 24px;
+}
+/* Contact form styles */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.form-container label {
+    font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container textarea {
+    resize: vertical;
+}
